@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DisplayContact" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <EditText
+            android:id="@+id/edit_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button_login"
+            android:layout_toEndOf="@+id/button_login">
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_id"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/edit_user_id"
+            android:layout_alignBottom="@+id/edit_user_id"
+            android:layout_alignLeft="@+id/button_login"
+            android:layout_alignStart="@+id/button_login"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+        <EditText
+            android:id="@+id/edit_user_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_alignBaseline="@+id/text_user_password"
+            android:layout_alignBottom="@+id/text_user_password"
+            android:layout_toRightOf="@+id/text_user_password"
+            android:layout_toEndOf="@+id/text_user_password">
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_user_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/psw"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/edit_user_id"
+            android:layout_alignRight="@+id/button_login"
+            android:layout_alignEnd="@+id/button_login"
+            android:layout_marginTop="25dp" />
+
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:layout_marginTop="102dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:layout_below="@+id/edit_user_id"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/button_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regist"
+            android:layout_alignBaseline="@+id/button_login"
+            android:layout_alignBottom="@+id/button_login"
+            android:layout_alignRight="@+id/edit_user_id"
+            android:layout_alignEnd="@+id/edit_user_id" />
+
+
+
+    </RelativeLayout>
+</ScrollView>

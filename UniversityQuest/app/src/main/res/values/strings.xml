@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">University Quest</string>
+    <string name="welcome">Welcome to University Quest!</string>
+    <string name="user_id">User ID:</string>
+    <string name="psw">Password:</string>
+    <string name="login">Login</string>
+    <string name="regist">Create</string>
 </resources>
